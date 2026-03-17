@@ -1,5 +1,12 @@
-FROM nginx:latest
+FROM python:3.11-slim
 
-COPY app /usr/share/nginx/html
+WORKDIR /app
 
-EXPOSE 80
+COPY app/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app/ .
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]
