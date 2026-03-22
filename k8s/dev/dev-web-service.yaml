@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: web-service
 spec:
-  [cite_start]type: LoadBalancer 
+  type: LoadBalancer    
   selector:
-    app: web-app
+    app: web-app        
   ports:
   - protocol: TCP
-    port: 80      
-    targetPort: 5005 
+    port: 80            
+    targetPort: 5005    
