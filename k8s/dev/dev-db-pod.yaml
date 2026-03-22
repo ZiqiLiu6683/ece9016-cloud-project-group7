@@ -7,11 +7,11 @@ metadata:
 spec:
   containers:
   - name: mysql
-    [cite_start]image: mysql:8.0
+    image: mysql:8.0
     ports:
     - containerPort: 3306
     env:
     - name: MYSQL_ROOT_PASSWORD
-      [cite_start]value: "rootpassword" 
+      value: "rootpassword"
     - name: MYSQL_DATABASE
       value: "products_db"
