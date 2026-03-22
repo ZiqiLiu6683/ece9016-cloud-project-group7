@@ -1,9 +1,9 @@
-apiVersion: apps/v1
+aapiVersion: apps/v1
 kind: Deployment
 metadata:
   name: db-deployment
 spec:
-  [cite_start]replicas: 1 
+  replicas: 1
   selector:
     matchLabels:
       app: db
